@@ -1,0 +1,95 @@
+https://cloudlabs.springpeople.com/#/client/NTgAYwBteXNxbA==
+Lab: http://labsap.s3-website-us-west-1.amazonaws.com/
+Docs: https://drive.google.com/drive/u/1/folders/15Rg9bU1PTOw19oIQDel7E4meppiJhT9k?usp=sharing
+
+
+
+sudo apt-get -y install docker
+
+pwd
+ps -ef | docker
+sudo apt-get -y install docker
+clear
+sudo apt-get -y install docke
+clear
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+history
+ id -a
+   13  whoami
+   14  sudo usermod -a -G docker ubuntu
+   15  history
+AP-ROLE-NAME6:~/envir
+
+whoami
+   14  sudo usermod -a -G docker ubuntu
+   15  history
+   16  id -a
+   17  group
+   18  clear
+   19  id
+   20  docker info
+   21  docker pull httpd:204
+   22  docker pull httpd:2.4
+   23  history
+
+docker images
+   26  dcoker images
+   25  docker images
+   26  docker rmi c62438d19947 da010bd3ab94 2e9dc504facb 8268ac94424a 7cd8ce2d0aa9
+   27  docker images
+   32  docker run -d --name myContainer
+   33  docker run -d --name testcont -p 9000:80 httpd:2.4
+   34  docker ps
+   36  docker ps -a
+   37  curl http://localhost:9000
+   38  history
+   39  docker inspect testcont
+   40  docker top testcont
+   41  cd /proc/16954/ns
+   45  docker stat testcont
+   46  docker stats testcont
+   47  history
+
+To build an image:
+docker build -t gayathrimagesh/my-cart:1.0 cart/api/
+docker build -t gayathrimagesh/my-cart:1.0 cart/api/
+
+docker build -t gayathrimagesh/my-cart-logs:1.0 cart/api/
+
+docker images
+
+
+docker run -d --name my-cart-1-test -p 9001:80 -v my-cart-test:/var/log -v /home/ubuntu:/home/ubuntu gayathrimagesh/my-cart-logs:2.0
+
+docker run -d --name my-cart-logs -v my-cart-test-logs:/mnt/log:ro gayathrimagesh/my-cart-logs:1.0
+
+docker run -d --name my-cart-2-test -p 9002:80 gayathrimagesh/my-cart-1:2.0
+
+Domain name:
+student20.courseandlabs.com
+
+
+Docker Network:
+docker network create --driver bridge --subnet 10.1.0.0/16 --gateway 10.1.0.1 testnw
+docker run -d --name my-cart-fe --net testnw gayathrimagesh/my-cart-1:2.0
+docker run -d --name my-cart-be --net testnw gayathrimagesh/my-cart-1:2.0
+docker network inspect testnw
+docker ps
+docker exec -it my-cart-fe /bin/bash
+At the command prompt of container, type--> curl http://my-cart-fe
+
+git clone https://github.com/gayathrimagesh/myapp1808.git
+git clone https://github.com/gayathrimagesh/cart.git
+
+To install Mini-Kube:
+git clone https://github.com/mohanraz81/kube_install_kops.git
+
+ssh -i id_rss 
+
+
+s.com
+
+while true; do wget -q -O- http://a2817c361effa11e9b2850e5a6bf08eb-1628264102.us-east-1.elb.amazonaws.com; done
+
