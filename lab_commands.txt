@@ -1,0 +1,610 @@
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes tg
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $ git push https://github.com/gayathrimagesh
+fatal: not a git repository (or any of the parent directories): .git
+AP-ROLE-NAME6:~/environment $ ls
+README.md  cart  index.html  kube_install_kops  myapp1808
+AP-ROLE-NAME6:~/environment $ ls -lrt
+total 28
+-rw-r--r--  1 ubuntu ubuntu   569 Sep 27 10:23 README.md
+-rw-rw-r--  1 ubuntu ubuntu 10918 Sep 27 10:46 index.html
+drwxrwxr-x 11 ubuntu ubuntu  4096 Oct 15 08:30 myapp1808
+drwxrwxr-x  6 ubuntu ubuntu  4096 Oct 16 09:06 cart
+drwxrwxr-x  4 ubuntu ubuntu  4096 Oct 16 09:41 kube_install_kops
+AP-ROLE-NAME6:~/environment $ cd kube_install_kops/
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ ls -lrt
+total 18324
+-rwxrwxr-x 1 ubuntu ubuntu     4315 Oct 16 06:53 addon.sh
+-rwxrwxr-x 1 ubuntu ubuntu 18650400 Oct 16 06:53 aws-iam-authenticator
+-rw-rw-r-- 1 ubuntu ubuntu     3666 Oct 16 06:53 metricserver.yaml
+-rw-rw-r-- 1 ubuntu ubuntu     4956 Oct 16 06:53 kubernetes-dashboard.yaml
+-rw-rw-r-- 1 ubuntu ubuntu     1753 Oct 16 06:53 kopsig.yaml
+-rw-rw-r-- 1 ubuntu ubuntu     1868 Oct 16 06:53 kops.yaml
+-rw-rw-r-- 1 ubuntu ubuntu      642 Oct 16 06:53 installhelm.sh
+-rwxrwxr-x 1 ubuntu ubuntu      360 Oct 16 06:53 install_kops.sh
+-rw-rw-r-- 1 ubuntu ubuntu      159 Oct 16 06:53 install_iam_authenticator.sh
+-rwxrwxr-x 1 ubuntu ubuntu      609 Oct 16 06:53 install_helm.sh
+-rw-rw-r-- 1 ubuntu ubuntu      726 Oct 16 06:53 initial_kops.sh
+-rw-rw-r-- 1 ubuntu ubuntu      357 Oct 16 06:53 helm-rbac.yaml
+-rwxrwxr-x 1 ubuntu ubuntu     7034 Oct 16 06:53 get_helm.sh
+-rwxrwxr-x 1 ubuntu ubuntu      197 Oct 16 06:53 get_cluster.sh
+-rw-rw-r-- 1 ubuntu ubuntu      177 Oct 16 06:53 fluentd.sh
+-rwxrwxr-x 1 ubuntu ubuntu     1451 Oct 16 06:53 delete_cluster.sh
+-rw-rw-r-- 1 ubuntu ubuntu      358 Oct 16 06:53 dashboardrbac.yaml
+drwxrwxr-x 7 ubuntu ubuntu     4096 Oct 16 06:53 charts
+-rw-rw-r-- 1 ubuntu ubuntu      120 Oct 16 07:36 kops_cluster_data
+-rw-r--r-- 1 ubuntu ubuntu      405 Oct 16 07:36 id_rsa.pub
+-rw------- 1 ubuntu ubuntu     1679 Oct 16 07:36 id_rsa
+-rw-rw-r-- 1 ubuntu ubuntu     2040 Oct 16 07:36 kops1.yaml
+-rw-rw-r-- 1 ubuntu ubuntu     1893 Oct 16 07:36 kopsig1.yaml
+-rwxrwxr-x 1 ubuntu ubuntu     4876 Oct 16 08:48 create_cluster.sh
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ git push https://github.com/gayathrimagesh
+remote: Not Found
+fatal: repository 'https://github.com/gayathrimagesh/' not found
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ git push https://github.com/gayathrimagesh
+remote: Not Found
+fatal: repository 'https://github.com/gayathrimagesh/' not found
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ git clone https://github.com/gayathrimagesh/myapp1808.git
+Cloning into 'myapp1808'...
+Username for 'https://github.com': ^C
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ git push https://github.com/gayathri-mdd/cart.git
+Username for 'https://github.com': gayatrhri-mdd
+Password for 'https://gayatrhri-mdd@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/gayathri-mdd/cart.git/'
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ cd ..
+AP-ROLE-NAME6:~/environment $ cd cart
+AP-ROLE-NAME6:~/environment/cart (master) $ git push https://github.com/gayathri-mdd/cart.git
+error: src refspec refs/heads/master does not match any.
+error: failed to push some refs to 'https://github.com/gayathri-mdd/cart.git'
+AP-ROLE-NAME6:~/environment/cart (master) $ gayathri.mdd@gmail.com
+gayathri.mdd@gmail.com: command not found
+AP-ROLE-NAME6:~/environment/cart (master) $ git push https://github.com/gayathri-mdd/cart.git
+error: src refspec refs/heads/master does not match any.
+error: failed to push some refs to 'https://github.com/gayathri-mdd/cart.git'
+AP-ROLE-NAME6:~/environment/cart (master) $ cd ..
+AP-ROLE-NAME6:~/environment $ ls -lrt
+total 28
+-rw-r--r--  1 ubuntu ubuntu   569 Sep 27 10:23 README.md
+-rw-rw-r--  1 ubuntu ubuntu 10918 Sep 27 10:46 index.html
+drwxrwxr-x 11 ubuntu ubuntu  4096 Oct 15 08:30 myapp1808
+drwxrwxr-x  6 ubuntu ubuntu  4096 Oct 16 09:06 cart
+drwxrwxr-x  4 ubuntu ubuntu  4096 Oct 16 11:11 kube_install_kops
+AP-ROLE-NAME6:~/environment $ cd kube_install_kops/
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ git push https://github.com/gayathri-mdd/kube_install_kops.git
+Username for 'https://github.com': gayathri.mdd@gmail.com
+Password for 'https://gayathri.mdd@gmail.com@github.com':
+remote: Repository not found.
+fatal: repository 'https://github.com/gayathri-mdd/kube_install_kops.git/' not found
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ git remote add origin https://github.com/gayathri-mdd/cart.git
+fatal: remote origin already exists.
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ cd ..
+AP-ROLE-NAME6:~/environment $ cd cart
+AP-ROLE-NAME6:~/environment/cart (master) $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/gayathri-mdd/cart.git'
+AP-ROLE-NAME6:~/environment/cart (master) $ cd ..
+AP-ROLE-NAME6:~/environment $ git push -u origin master
+fatal: not a git repository (or any of the parent directories): .git
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $
+AP-ROLE-NAME6:~/environment $ cd kube_install_kops/
+AP-ROLE-NAME6:~/environment/kube_install_kops (master) $ cd ..
+AP-ROLE-NAME6:~/environment $ ls -lrt
+total 28
+-rw-r--r--  1 ubuntu ubuntu   569 Sep 27 10:23 README.md
+-rw-rw-r--  1 ubuntu ubuntu 10918 Sep 27 10:46 index.html
+drwxrwxr-x 11 ubuntu ubuntu  4096 Oct 15 08:30 myapp1808
+drwxrwxr-x  6 ubuntu ubuntu  4096 Oct 16 09:06 cart
+drwxrwxr-x  4 ubuntu ubuntu  4096 Oct 16 11:11 kube_install_kops
+AP-ROLE-NAME6:~/environment $ ls -lrt
+total 28
+-rw-r--r--  1 ubuntu ubuntu   569 Sep 27 10:23 README.md
+-rw-rw-r--  1 ubuntu ubuntu 10918 Sep 27 10:46 index.html
+drwxrwxr-x 11 ubuntu ubuntu  4096 Oct 15 08:30 myapp1808
+drwxrwxr-x  6 ubuntu ubuntu  4096 Oct 16 09:06 cart
+drwxrwxr-x  4 ubuntu ubuntu  4096 Oct 16 11:11 kube_install_kops
+AP-ROLE-NAME6:~/environment $ 
+AP-ROLE-NAME6:~/environment $ 
+AP-ROLE-NAME6:~/environment $ git clone https://github.com/gayathri-mdd/lab-kubernetes.git
+Cloning into 'lab-kubernetes'...
+warning: You appear to have cloned an empty repository.
+AP-ROLE-NAME6:~/environment $ git push https://github.com/gayathri-mdd/lab-kubernetes.git
+fatal: not a git repository (or any of the parent directories): .git
+AP-ROLE-NAME6:~/environment $ ls
+README.md  cart  index.html  kube_install_kops  lab-kubernetes  myapp1808
+AP-ROLE-NAME6:~/environment $ ls -lrt
+total 32
+-rw-r--r--  1 ubuntu ubuntu   569 Sep 27 10:23 README.md
+-rw-rw-r--  1 ubuntu ubuntu 10918 Sep 27 10:46 index.html
+drwxrwxr-x 11 ubuntu ubuntu  4096 Oct 15 08:30 myapp1808
+drwxrwxr-x  6 ubuntu ubuntu  4096 Oct 16 09:06 cart
+drwxrwxr-x  4 ubuntu ubuntu  4096 Oct 16 11:11 kube_install_kops
+drwxrwxr-x  3 ubuntu ubuntu  4096 Oct 16 11:19 lab-kubernetes
+AP-ROLE-NAME6:~/environment $ cd lab-kubernetes/
+AP-ROLE-NAME6:~/environment/lab-kubernetes (master) $ ls -lrt
+total 0
+AP-ROLE-NAME6:~/environment/lab-kubernetes (master) $ cd ..
+AP-ROLE-NAME6:~/environment $ rmdir lab-kubernetes/
+rmdir: failed to remove 'lab-kubernetes/': Directory not empty
+AP-ROLE-NAME6:~/environment $ 
+AP-ROLE-NAME6:~/environment $ git clone https://github.com/gayathri-mdd/lab-kubernetes.git
+fatal: destination path 'lab-kubernetes' already exists and is not an empty directory.
+AP-ROLE-NAME6:~/environment $ history 
+    1  pwd
+    2  ps -ef | docker
+    3  clear
+    4  sudo apt-get -y install docker
+    5  clear
+    6  sudo apt-get -y install docke
+    7  clear
+    8  sudo systemctl start docker
+    9  sudo systemctl enable docker
+   10  sudo systemctl status docker
+   11  history
+   12  id -a
+   13  whoami
+   14  sudo usermod -a -G docker ubuntu
+   15  history
+   16  id -a
+   17  group
+   18  clear
+   19  id
+   20  docker info
+   21  docker pull httpd:204
+   22  docker pull httpd:2.4
+   23  history
+   24  dcoker images
+   25  docker images
+   26  docker rmi c62438d19947 da010bd3ab94 2e9dc504facb 8268ac94424a 7cd8ce2d0aa9
+   27  docker images
+   28  docker images ??
+   29  docker images /?
+   30  history
+   31  docker images
+   32  docker run -d --name myContainer
+   33  docker run -d --name testcont -p 9000:80 httpd:2.4
+   34  docker ps
+   35  docker ps -ef
+   36  docker ps -a
+   37  curl http://localhost:9000
+   38  history
+   39  docker inspect testcont
+   40  docker top testcont
+   41  cd /proc/16954/ns
+   42  ls -lrt
+   43  ls -lrt
+   44  ls -lrt
+   45  docker stat testcont
+   46  docker stats testcont
+   47  history
+   48  docker top testcont
+   49  ls -lrt
+   50  docker ps
+   51  docker stop testcont
+   52  docker ps -a
+   53  docker start testcont
+   54  docker ps -a
+   55  docker run -d --name testcont -p 9000:80 httpd:2.4
+   56  docker run -d --name testcont -p 9000:80 httpd:2.4
+   57  docker exec testcont ls /etc/hosts
+   58  docker exec testcont ls /etc
+   59  docker exec -it testcont /bin/bash
+   60  exit
+   61  sudo bash
+   62  exit
+   63  git clone https://github.com/gayathri-mdd/cart.git
+   64  cd cart
+   65  ls -lrt
+   66  ls -lrt
+   67  docker image
+   68  docker images
+   69  ls -lrt
+   70  cd cart
+   71  ls
+   72  cd api
+   73  ls
+   74  cd ..
+   75  cd ..
+   76  pwd
+   77  cd /var/lib
+   78  ls
+   79  cd httpd
+   80  cd api
+   81  cd httpd
+   82  ls
+   83  cd ~
+   84  pwd
+   85  cd environment/
+   86  pwd
+   87  cd /etc/httpd
+   88  cd /etc
+   89  ls
+   90  cd ~
+   91  cd environment/
+   92  pwd
+   93  docker images
+   94  docker inspect 19459a872194
+   95  cd /usr/local/apache
+   96  cd /usr/local/apache2
+   97  cd /usr
+   98  cd ~
+   99  cd environment/
+  100  ls -lrt
+  101  ls -lrt
+  102  docker build -t gayathrimagesh/my-cart:1.0 cart/api/
+  103  docker build -t gayathrimagesh/my-cart:1.0 cart/api/
+  104  docker images
+  105  history
+  106  docker images
+  107  docker images
+  108  docker images
+  109  docker run -d --name my-cart-test -p 9001:80
+  110  docker run -d --name my-cart-test -p 9001:80 gayathrimagesh/my-cart:1.0
+  111  docker ps
+  112  docker imagesdocker images
+  113  docker images
+  114  wget http://localhost:80
+  115  docker images
+  116  crul http://localhost:9001
+  117  curl http://localhost:9001
+  118  curl http://localhost:80
+  119  curl http://localhost:80
+  120  curl http://localhost:80
+  121  curl http://localhost:80
+  122  docker -ps
+  123  docker ps
+  124  ip
+  125  ipconfig
+  126  ipconfig
+  127  hostname
+  128  ping ip-172-31-81-236
+  129  docker build -t gayathrimagesh/my-cart-1:1.0 cart/api/
+  130  docker images
+  131  docker run -d --name my-cart-test1 -p 9001:80 gayathrimagesh/my-cart:1.0
+  132  docker ps
+  133  docker run -d --name my-cart-test1 -p 9002:80 gayathrimagesh/my-cart:1.0
+  134  docker ps
+  135  docker ps -a
+  136  docker stop my-cart-test1
+  137  docker terminate my-cart-test1
+  138  docker images
+  139  docker history gayathrimagesh/my-cart
+  140  docker history gayathrimagesh/my-cart:1.0
+  141  pwd
+  142  git clone https://github.com/mohanraz81/myapp1808.git
+  143  docker build -t gayathrimagesh/my-cart-1:2.0 cart/api/
+  144  docker ps
+  145  docker images
+  146  docker ps
+  147  docker ps -1
+  148  docker ps -a
+  149  docker stop my-cart-test
+  150  docker stop my-cart-test1
+  151  docker rm my-cart-test
+  152  docker rm my-cart-test1
+  153  docker ps -a
+  154  docker run -d --name my-cart-2 -p 9002:80 gayathrimagesh/my-cart:2.0
+  155  docker images
+  156  docker run -d --name my-cart-2 -p 9002:80 gayathrimagesh/my-cart-1:2.0
+  157  curl http://localhost:9001
+  158  curl http://localhost:9002
+  159  docker ps
+  160  docker stop my-cart-2
+  161  docker rm my-cart-2
+  162  docker ps
+  163  docker images
+  164  docker run -d --name my-cart-2 -p 9001:80 -v my-cart-2.logs:/var/log -v /home/ubumtu:/home/ubuntu gayathrimagesh/my-cart-02:2.0
+  165  docker run -d --name my-cart-2 -p 9001:80 -v my-cart-2.logs:/var/log -v /home/ubumtu:/home/ubuntu gayathrimagesh/my-cart-2.0:2.0
+  166  docker run -d --name my-cart-2 -p 9001:80 -v my-cart-2.logs:/var/log -v /home/ubumtu:/home/ubuntu gayathrimagesh/my-cart.0:2.0
+  167  docker run -d --name my-cart-2 -p 9001:80 -v my-cart-2.logs:/var/log -v /home/ubumtu:/home/ubuntu gayathrimagesh/my-cart:2.0
+  168  docker run -d --name my-cart-test -p 9001:80 -v my-cart-test-logs:/var/log -v /home/ubuntu:/home/ubuntu gayathrimagesh/my-cart-1:2.0
+  169  df -h
+  170  docker ps
+  171  docker inspect my-cart-test
+  172  sudo bash /var/lib/docker/volumes/my-cart-test.logs
+  173  sudo bash /var/lib/docker/volumes
+  174  ls
+  175  docker run -d --name my-cart-test -p 9001:80 -v my-cart-test-logs:/var/log -v /home/ubuntu:/home/ubuntu gayathrimagesh/my-cart-1:2.0
+  176  sudo bash /var/lib/docker/volumes
+  177  sudo bash /var/lib/docker/volume
+  178  cd /var
+  179  cd lib
+  180  ls
+  181  cd docker
+  182  ls
+  183  sudo bash /var/lib/docker/volume
+  184  sudo bash /var/lib/docker
+  185  sudo bash /var/lib/docker
+  186  sudo bash /var/lib
+  187  rm -rf ~/.aws
+  188  cd /var
+  189  cd /lib
+  190  ls
+  191  cd ~
+  192  cd environment/
+  193  ls -lrt
+  194  docker ps
+  195  aws sts get-caller-identity
+  196  docker build -t gayathrimagesh/my-cart-logs:1.0 cart/api/
+  197  docker images
+  198  docker rmi gayathrimagesh/my-cart-1
+  199  docker rmi gayathrimagesh/my-cart-1:1.0
+  200  docker rmi gayathrimagesh/my-cart-1
+  201  docker images
+  202  docker run -d --name my-cart-1-test -p 9001:80 -v my-cart-test-logs:/var/log -v /home/ubuntu:/home/ubuntu gayathrimagesh/my-cart-1:2.0
+  203  docker ps
+  204  docker images
+  205  docker images
+  206  docker run -d --name my-cart-logs -v my-cart-test-logs:/mnt/log:ro gayathrimagesh/my-cart-logs:1.0
+  207  docker ps
+  208  docker network ls
+  209  ifconfig -a
+  210  docker network inspect
+  211  docker inspect network
+  212  docker network
+  213  docker network create --driver bridge --subnet 10.1.0.0/16 --gateway 10.1.0.1 testnw
+  214  docker network ls
+  215  docker network testnw inspect
+  216  docker network inspect
+  217  docker network ls
+  218  docker network inspect
+  219  docker network inspect testnw
+  220  docker run -d --name my-cart-2-test -p 9002:80 gayathrimagesh/my-cart-logs:2.0
+  221  docker run -d --name my-cart-2-test -p 9002:80 gayathrimagesh/my-cart-1:2.0
+  222  docker run -d --name my-cart-3-test --net testnw gayathrimagesh/my-cart-1:2.0
+  223  docker run -d --name my-cart-fe --net testnw gayathrimagesh/my-cart-1:2.0
+  224  docker run -d --name my-cart-be --net testnw gayathrimagesh/my-cart-1:2.0
+  225  docker ps
+  226  ndocker exec -it my-cart-fe /bin/bash
+  227  docker exec -it my-cart-fe /bin/bash
+  228  history
+  229  docker exec -it my-cart-fe /bin/bash
+  230  docker images
+  231  docker push my-cart
+  232  docker push gayathrimagesh/my-cart
+  233  docker push gayathrimagesh/my-cart-1
+  234  git remote -v
+  235  git
+  236  git remote -v
+  237  cd cart
+  238  git remote -v
+  239  git clone https://github.com/gayathrimagesh/myapp1808.git
+  240  git clone https://github.com/gayathrimagesh/myapp1808.git
+  241  git clone https://github.com/gayathrimagesh/myapp1808.git
+  242  docker images
+  243  ]dokcer login gayathrimagesh
+  244  docker login
+  245  docker images
+  246  docker tag gayathrimagesh/my-cart-1:2.0 gayathrimagesh/my-cart-1
+  247  docker images
+  248  docker push
+  249  docker push latest
+  250  docker push gayathrimagesh/my-cart-1
+  251  docker push gayathrimagesh/myapp1808
+  252  ls -lrt
+  253  exit
+  254  https://github.com/mohanraz81/kube_install_kops.git
+  255  git clone https://github.com/mohanraz81/kube_install_kops.git
+  256  ls
+  257  ls -lrt
+  258  cd kube_install_kops/
+  259  ls -lrt
+  260  git add*
+  261  git add *
+  262  git commit -m 
+  263  git commit -m
+  264  git commit -m
+  265  git commit -m "test"
+  266  git login
+  267  git config --global user.email "gayathri.mdd@gmail.com"
+  268  git commit
+  269  git push
+  270  git push
+  271  git push
+  272  git push
+  273  ls
+  274  cd ../kube_install_kops
+  275  ./create_cluster.sh student20.courseandlabs.com ec2-role-access
+  276  ./create_cluster.sh student20.courseandlabs.com ec2-access-role
+  277  git commit
+  278  git committ
+  279  cd ..
+  280  ls 
+  281  ls -lrt
+  282  git commit
+  283  cd cart
+  284  git commit
+  285  git add *
+  286  git commit
+  287  ls
+  288  git commit api
+  289  cd ..
+  290  ls
+  291  cd kube_install_kops/
+  292  kubectl nodes
+  293  kubectrl get nodes
+  294  kubectl get nodes
+  295  kubectl get namespaces
+  296  kubectl get
+  297  kubectl describe
+  298  kubectl describe services
+  299  kubectlget nodes
+  300  kubectl get nodes
+  301  kubectl describe node ip-172-20-116-234.ec2.internal
+  302  kubectl get events
+  303  ssh -i id_rss ec2-3-90-143-101.compute-1.amazonaws.com
+  304  ssh -i id_rss@ec2-3-90-143-101.compute-1.amazonaws.com
+  305  ls
+  306  kubectl get namespaces
+  307  kubectl get pods --namespace kube-system
+  308  cd ../cart
+  309  kubectl apply -f namespace/namespacedeply.taml
+  310  kubectl apply -f namespace/namespacedeply.yaml
+  311  kubectl apply -f namespace/namespacedeploy.yaml
+  312  kubectl describe namespace
+  313  kubectl describe namespace mycart
+  314  kubectl get namespaces
+  315  docker images
+  316  ls
+  317  cd ..
+  318  git commit
+  319  ls
+  320  cd myapp1808
+  321  git add *
+  322  git commit
+  323  git push myapp1808
+  324  ls
+  325  git push
+  326  cd ..
+  327  ls -lrt
+  328  history
+  329  cd kube_install_kops/
+  330  kubectl apply -f metricserver.yaml
+  331  git clone https://github.com/gayathrimagesh/myapp1808.git
+  332  cls
+  333  kubectl apply -f deploy/frontend
+  334  kubectl apply -f deploy/frontend/
+  335  pwd
+  336  ls
+  337  cd ..
+  338  cd mycart
+  339  ls
+  340  cd cart
+  341  ls
+  342  kubectl apply -f deploy/frontend/
+  343  kubectl get all -n cart
+  344  kubectl get all -n mycart
+  345  kubectl describe service svc/api
+  346  kubectl describe service api
+  347  kubectl get all -n mycart
+  348  kubectl delete service api -n mycart
+  349  kubectl apply -f deploy/frontend
+  350  kubectl describe service api
+  351  kubectl get all -n mycart
+  352  kubectl get all -n mycart
+  353  kubectl get pods -n mycart
+  354  kubectl describe pod myacart-frontend-5d46c99b87-6xmpd
+  355  clear
+  356  kubectl get
+  357  kubectl descrive service api -n mycart
+  358  kubectl describe service api -n mycart
+  359  git push 
+  360  git push https://github.com/gayathri-mdd/cart.git
+  361  cd ..
+  362  git push https://github.com/gayathri-mdd/cart.git
+  363  ls
+  364  cd cart
+  365  ls
+  366  git push https://github.com/gayathri-mdd
+  367  ls
+  368  cd kube_install_kops/
+  369  kubectl get endpoint -n mycart -w
+  370  cd kube_install_kops/
+  371  cd ..
+  372  history
+  373  kubectl apply -f deploy/frontend
+  374  cd cart
+  375  kubectl apply -f deploy/frontend
+  376  while true; do wget -q -O- http://a2817c361effa11e9b2850e5a6bf08eb-1628264102.us-east-1.elb.amazonaw; done
+  377  while true; do wget -q -O- http://a2817c361effa11e9b2850e5a6bf08eb-1628264102.us-east-1.elb.amazonaws.com; done
+  378  kubectl get hpa -n mycart -w 
+  379  kubectl get pods -n mycart -w
+  380  kubectl get rs -n mycart -w
+  381  kubectl get endpoints -n mycart -w
+  382  ls
+  383  cd cart
+  384  ls
+  385  ls -lrt
+  386  git
+  387  git push https://github.com/gayathrimagesh
+  388  ls
+  389  ls -lrt
+  390  cd kube_install_kops/
+  391  ls -lrt
+  392  git push https://github.com/gayathrimagesh
+  393  git push https://github.com/gayathrimagesh
+  394  git clone https://github.com/gayathrimagesh/myapp1808.git
+  395  git push https://github.com/gayathri-mdd/cart.git
+  396  cd ..
+  397  cd cart
+  398  git push https://github.com/gayathri-mdd/cart.git
+  399  gayathri.mdd@gmail.com
+  400  git push https://github.com/gayathri-mdd/cart.git
+  401  cd ..
+  402  ls -lrt
+  403  cd kube_install_kops/
+  404  git push https://github.com/gayathri-mdd/kube_install_kops.git
+  405  git remote add origin https://github.com/gayathri-mdd/cart.git
+  406  cd ..
+  407  cd cart
+  408  git push -u origin master
+  409  cd ..
+  410  git push -u origin master
+  411  cd kube_install_kops/
+  412  cd ..
+  413  ls -lrt
+  414  ls -lrt
+  415  git clone https://github.com/gayathri-mdd/lab-kubernetes.git
+  416  git push https://github.com/gayathri-mdd/lab-kubernetes.git
+  417  ls
+  418  ls -lrt
+  419  cd lab-kubernetes/
+  420  ls -lrt
+  421  cd ..
+  422  rmdir lab-kubernetes/
+  423  git clone https://github.com/gayathri-mdd/lab-kubernetes.git
+  424  history 
+AP-ROLE-NAME6:~/environment $ 
